@@ -55,25 +55,13 @@ function valueMenu() {
     var addMenuItems = document.getElementById('menu');
 
     function displayMenuItems (items) {
-        // for (var i = 0; i < items.length; i++ ) {
-        //     console.log(items[i]);
-        //     console.log(items.length);
-        //     addMenuItems.innerHTML = items[i];
-        
-        // }
+
         addMenuItems.innerHTML = items;
     }
-    // displayMenuItems(menuItems);
-    // var showItems = displayMenuItems(menuItems);
 
-    // addMenuItems.innerHTML = showItems;
  displayMenuItems(menuItems);
-
-
 }
-// var showItems = displayMenuItems(menuItems);
 
-// addMenuItems.innerHTML = showItems;
 
 //5. Gin.
 /*Create a function named redFace that will change the paragraph text to red and a font size of 30px after clicking on the text.*/
