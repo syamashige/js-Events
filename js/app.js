@@ -39,6 +39,10 @@ function lessContent () {
 //3. Tacocat, The Original Palindrome King
 /*Create a function named `zoom` that will increase the font size of the paragraph with the id of `biggie` after hovering your mouse over it. Increae the font size to 150%*/
 
+function zoom () {
+    var tacocat = document.getElementById('biggie');
+    tacocat.style.fontSize = "150%";
+}
 
 //4. McDonalds
 /*Create a variable name menuItems and assign it an array of three of your favorite items at McDonald's.
