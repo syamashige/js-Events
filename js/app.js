@@ -107,6 +107,15 @@ var button2 = document.getElementById('random');
 
 button2.addEventListener('click',randomQuote);
 
+// ??? Not sure why it didn't work with the parameter added and works when you take out the parameter
+// button2.addEventListener('click',randomQuote(arr)); <-- outputs a random quote upon loading the page - doesn't work wiht the button
+
+// function randomQuote (arr) {
+//     var quote = arr[Math.floor(Math.random()*arr.length)];
+//     var generateQuote = document.getElementById('displayQuotes');
+//     generateQuote.innerHTML = quote;
+// }
+
 function randomQuote () {
     var quote = quotes[Math.floor(Math.random()*quotes.length)];
     var generateQuote = document.getElementById('displayQuotes');
