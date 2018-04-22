@@ -127,7 +127,25 @@ function randomQuote () {
 /*Create an event listener that will show and hide the message when clicking on the button.
 */
 
+// var message = "Message";
 
+var button3 = document.getElementById('showHide');
+
+button3.addEventListener('click', displayMessage);
+
+var display = 'show';
+
+function displayMessage () {
+    var message = document.getElementById('showmoney');
+    if (display === 'show') {
+        message.style.display = 'block';
+        display = 'hide';
+    }
+    else {
+        message.style.display = 'none';
+        display = 'show';
+    }
+}
 
 
 
