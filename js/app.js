@@ -69,6 +69,7 @@ function valueMenu() {
 function redFace () {
     var newColor = document.getElementById('drink');
     newColor.style.color = "red";
+    newColor.style.fontSize = "30px";
 }
 //6. Peanut Butter Cup Oreos
 /*Create a function `showPrice` that will add the price of `$5.55` inside the paragraph with the id `price` after hovering your mouse over the paragraph.*/
@@ -93,8 +94,10 @@ button1.addEventListener('click',buttonQuote);
 function buttonQuote () {
     var quoteParagraph = document.getElementById('displayQuote');
     quoteParagraph.innerHTML = myQuote;
-    console.log(quoteParagraph);
+    // console.log(quoteParagraph);
 }
+
+
 //8. Say It again, Randomly
 /*Create a function that will generate a random quote from the variable below after clicking on the button.*/
 
