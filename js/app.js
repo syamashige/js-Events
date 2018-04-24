@@ -51,15 +51,20 @@ Next, create a function named valueMenu that will display your favorite items in
 
 var menuItems = ['Fish Sandwich','McFlurry','Soft Serve'];
 
-function valueMenu() {
-    var addMenuItems = document.getElementById('menu');
+// function valueMenu() {                       <-- not sure why I thought this was necessary
+//     var addMenuItems = document.getElementById('menu');
 
-    function displayMenuItems (items) {
+//     function displayMenuItems (items) {
 
-        addMenuItems.innerHTML = items;
-    }
+//         addMenuItems.innerHTML = items;
+//     }
 
- displayMenuItems(menuItems);
+//  displayMenuItems(menuItems);
+// }
+
+function valueMenu () {
+    var addFavorites = document.getElementById('menu');
+    addFavorites.innerHTML = menuItems;
 }
 
 
@@ -126,8 +131,6 @@ function randomQuote () {
 //9. Unlock the Secret to Financial Freedom
 /*Create an event listener that will show and hide the message when clicking on the button.
 */
-
-// var message = "Message";
 
 var button3 = document.getElementById('showHide');
 
