@@ -14,26 +14,38 @@ function moreContent () {
     baconContent.innerHTML = bacon;
 }
 
+//alternate way of writing it: 
+//docuent.getElementById('more').innerHTML = bacon;
+
 //2. HTTP
 /*Create a function named `lessContent` that will initiate the `Show Less` link after clicking on it.
 
 The function will hide the contents in the pargraph with the id of `less` after clicking on the `Show Less` link.*/
 
-var display ='showLess';
+// var display ='showLess';
+
+// function lessContent () {                <-- this will hide and show the contents (one cycle)
+//     var content = document.getElementById('less');
+//    if (display === 'showLess') {
+//        content.style.display = 'none';
+//        display = 'hide';
+
+//    }
+//    else {
+//        content.style.display = 'block';
+//        display = 'show';
+//    }
+
+// }
 
 function lessContent () {
-    var content = document.getElementById('less');
-   if (display === 'showLess') {
-       content.style.display = 'none';
-       display = 'hide';
-
-   }
-   else {
-       content.style.display = 'block';
-       display = 'show';
-   }
-
+    var pElem = document.getElementById('less');
+    pElem.style.display = 'none';
 }
+
+//alternate way of writing it: 
+//pElem.innerHTML = ""; <-- empty string
+
 
 
 //3. Tacocat, The Original Palindrome King
@@ -50,6 +62,7 @@ function zoom () {
 Next, create a function named valueMenu that will display your favorite items in the paragraph the the id of `menu` after clicking on the showMenu paragraph.*/
 
 var menuItems = ['Fish Sandwich','McFlurry','Soft Serve'];
+// showMenu.addEventListener('click', valueMenu); <-- not necessary, right? Since it already has it in the HTML.
 
 function valueMenu () {
     var addFavorites = document.getElementById('menu');
@@ -65,6 +78,11 @@ function redFace () {
     newColor.style.color = "red";
     newColor.style.fontSize = "30px";
 }
+
+//alternate way of writing multiple attributes:
+// drink.setAttribute('style', 'color':'red'; 'size':'30px')
+
+
 //6. Peanut Butter Cup Oreos
 /*Create a function `showPrice` that will add the price of `$5.55` inside the paragraph with the id `price` after hovering your mouse over the paragraph.*/
 
